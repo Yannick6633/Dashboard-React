@@ -17,7 +17,7 @@ function App() {
 
         userHasAuthenticated(false);
 
-        history.push("/login");
+        history.push("/");
     }
 
     const [isAuthenticated, userHasAuthenticated] = useState(false);

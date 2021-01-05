@@ -6,8 +6,7 @@ import LoaderButton from "../../components/LoaderButton";
 import "./login.css";
 
 export default function Login() {
-
-
+    
     const { userHasAuthenticated } = useAppContext();
     const history = useHistory();
 
@@ -28,7 +27,7 @@ export default function Login() {
         try {
             await userHasAuthenticated(email, password);
             userHasAuthenticated(true);
-            history.push("/loginPage");
+            history.push("/clock");
         } catch (e) {
             alert(e.message);
             setIsLoading(false);
