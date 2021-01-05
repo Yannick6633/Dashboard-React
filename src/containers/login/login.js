@@ -28,7 +28,7 @@ export default function Login() {
         try {
             await userHasAuthenticated(email, password);
             userHasAuthenticated(true);
-            history.push("/");
+            history.push("/loginPage");
         } catch (e) {
             alert(e.message);
             setIsLoading(false);
